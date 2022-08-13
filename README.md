@@ -3,7 +3,7 @@
   - Angular - UI
   - Spring boot - back end
 
-- Project features 
+- Project business features - initial list 
   - registration of users/admin etc.
   - booking trips
   - travel destinations

@@ -16,5 +16,5 @@
   - online chat
   - customer travel history + possibility to add places which you have already visited
   - vip/premium  customers
-  - search travel and it has different parts,like destination and calendar and number of people
+  - search travel and it has different parts,like destination and calender and numbe of people
 

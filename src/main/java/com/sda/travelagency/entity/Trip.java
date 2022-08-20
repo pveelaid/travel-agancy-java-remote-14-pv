@@ -1,14 +1,13 @@
 package com.sda.travelagency.entity;
-
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
-@Data
-
 public class Trip {
     LocalDate tripStartDate;
     LocalDate tripEndDate;
@@ -17,6 +16,10 @@ public class Trip {
     TransportType typeOfTransport;
     SecurityRules securityRules;
     PaymentType paymentType;
+
     MealType mealType;
 
+    HotelFacilities hotelFacilities;
+
+    List<String> photos;
 }

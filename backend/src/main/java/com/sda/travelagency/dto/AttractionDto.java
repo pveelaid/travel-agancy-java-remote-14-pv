@@ -1,6 +1,5 @@
 package com.sda.travelagency.dto;
 
-import com.sda.travelagency.entity.Attraction;
 import com.sda.travelagency.entity.enumeration.AgeRestrictions;
 
 import java.util.List;

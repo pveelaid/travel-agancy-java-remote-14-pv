@@ -19,10 +19,7 @@ public class Trip {
     TransportType typeOfTransport;
     SecurityRules securityRules;
     PaymentType paymentType;
-
     MealType mealType;
-
     HotelFacilities hotelFacilities;
-
     List<String> photos;
 }

@@ -1,4 +1,5 @@
 package com.sda.travelagency.entity;
+import com.sda.travelagency.entity.enumeration.TransportType;
 import lombok.*;
 
 import java.time.LocalDate;

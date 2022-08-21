@@ -1,4 +1,4 @@
-package com.sda.travelagency.entity;
+package com.sda.travelagency.entity.enumeration;
 
 public enum PaymentType {
     CASH("pay with cash"),
@@ -9,7 +9,7 @@ public enum PaymentType {
     PAYPAL("elon would You pay"),
     INSTALLMENT_PAYMENT("just installment pay");
 
-    private String description;
+    private final String description;
 
     PaymentType(String description) {
         this.description = description;
@@ -19,3 +19,17 @@ public enum PaymentType {
         return description;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

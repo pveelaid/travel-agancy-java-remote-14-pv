@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 public class SecurityRulesConverter implements Converter<SecurityRules, SecurityRulesDto>{
     @Override
     public SecurityRulesDto fromEntityToDto(SecurityRules entity) {
-        return null;
+        return new SecurityRulesDto(entity.getTravelRestrictions(), entity.getInsurance());
     }
 
     @Override
     public SecurityRules fromDtoToEntity(SecurityRulesDto dto) {
-        return null;
+        return new SecurityRules(dto.travelRestrictions(), dto.insurance());
     }
 }

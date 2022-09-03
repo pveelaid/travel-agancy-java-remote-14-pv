@@ -2,5 +2,5 @@ package com.sda.travelagency.dto;
 
 public record SecurityRulesDto(
         String travelRestrictions,
-        String Insurance) {
+        String insurance) {
 }

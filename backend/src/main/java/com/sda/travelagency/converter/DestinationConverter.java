@@ -18,7 +18,7 @@ public class DestinationConverter implements Converter<Destination, DestinationD
     @Override
     public Destination fromDtoToEntity(DestinationDto dto) {
 
-                return new Destination(dto.country(),
+        return new Destination(dto.country(),
                 dto.city(),
                 dto.hotelName());
     }

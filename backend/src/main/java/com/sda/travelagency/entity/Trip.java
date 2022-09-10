@@ -14,6 +14,8 @@ import java.util.List;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
 @Entity
+@Table(name = "TRIPS")
+
 public class Trip {
 
     @Id
@@ -24,11 +26,11 @@ public class Trip {
 
     LocalDate tripEndDate;
 
-    // dirty fix - just ignore that field
+    // @ Transient - dirty fix, just ignores that field
     @Transient
     Destination destination;
 
-    @Transient
+    @Embedded
     Price tripPrice;
 
     @Enumerated(EnumType.STRING)

@@ -1,4 +1,4 @@
-// TODO: refactor some fiels into enums - the same as backend
+// TODO: refactor some fields into enums - the same as backend
 export interface DestinationDto {
   country: string,
   city: string,

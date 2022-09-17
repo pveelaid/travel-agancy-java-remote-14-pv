@@ -4,6 +4,7 @@ import com.sda.travelagency.entity.*;
 import com.sda.travelagency.entity.enumeration.MealType;
 import com.sda.travelagency.entity.enumeration.PaymentType;
 import com.sda.travelagency.entity.enumeration.TransportType;
+import com.sda.travelagency.repository.TripRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.Example;
@@ -25,7 +26,7 @@ import java.util.function.Function;
 @Profile("develop")
 @Repository
 @Slf4j
-public class FakeTripRepository implements JpaRepository<Trip, Long> {
+public class FakeTripRepository implements TripRepository {
     public FakeTripRepository() {
         log.info("fake trip repository bean was created");
     }

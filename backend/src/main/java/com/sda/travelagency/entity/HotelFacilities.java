@@ -14,13 +14,14 @@ import java.util.List;
 public class HotelFacilities {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Transient
+
+    @OneToMany
     List<Attraction> attractions;
 
     @ElementCollection
     @CollectionTable(name = "APARTMENT_FACILITIES")
-    @Column(name="APARTMENT_FACILITY")
+    @Column(name = "APARTMENT_FACILITY")
     List<String> apartmentFacilities;
 }

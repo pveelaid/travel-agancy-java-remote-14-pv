@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {aboutUsUrl, homeUrl, newTripUrl, tripsUrl} from "../../models/urls";
 
 @Component({
@@ -12,5 +12,4 @@ export class NavigationComponent {
   aboutUs = aboutUsUrl
   trips = tripsUrl
   newTrip = newTripUrl
-
 }

@@ -10,10 +10,8 @@ describe('AboutusComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ AboutusComponent ]
     })
-    .compileComponents();
-  });
+      .compileComponents();
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(AboutusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

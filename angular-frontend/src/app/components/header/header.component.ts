@@ -9,6 +9,7 @@ import {TRAVEL_AGENCY_NAME} from "../../models/config";
 export class HeaderComponent implements OnInit {
 
   agencyName!: string
+
   constructor() {
     this.agencyName = TRAVEL_AGENCY_NAME
   }

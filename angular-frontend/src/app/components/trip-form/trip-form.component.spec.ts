@@ -10,10 +10,8 @@ describe('TripFormComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ TripFormComponent ]
     })
-    .compileComponents();
-  });
+      .compileComponents();
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(TripFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

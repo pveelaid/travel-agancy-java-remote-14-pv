@@ -24,20 +24,19 @@ public class TripControllerAdvisor {
         log.warn("handling not found trip", exc);
 
         return new ErrorResponse(LocalDateTime.now(),
-                404,
+                NOT_FOUND.value(),
                 exc.getMessage(),
                 ServletUriComponentsBuilder.fromCurrentRequest().toUriString());
     }
 
     @ResponseStatus(BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ErrorResponse handleBadRequest(MethodArgumentNotValidException exc){
-        log.warn("unexpected validation expection occurred", exc);
+    public ErrorResponse handleBadRequest(MethodArgumentNotValidException exc) {
+        log.warn("unexpected validation exception occurred :)", exc);
 
         return new ErrorResponse(LocalDateTime.now(),
                 BAD_REQUEST.value(),
                 exc.getMessage(),
                 ServletUriComponentsBuilder.fromCurrentRequest().toUriString());
     }
-
 }

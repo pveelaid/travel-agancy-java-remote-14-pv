@@ -19,17 +19,3 @@ public enum PaymentType {
         return description;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

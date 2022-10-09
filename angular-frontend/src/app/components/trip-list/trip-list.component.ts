@@ -25,6 +25,4 @@ export class TripListComponent implements OnInit {
       .subscribe(value => this.trips = value)
   }
 
-
-
 }

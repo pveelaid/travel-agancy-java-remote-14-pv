@@ -24,7 +24,7 @@ public record TripDto(
         DestinationDto destination,
 
         //inside dto field can have even different type
-        //because dto is only for ata transfer(json mostly)
+        //because dto is only for data transfer(json mostly)
         @NotNull
         String cost,
         @NotNull
